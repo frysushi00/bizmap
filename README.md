@@ -26,14 +26,14 @@ I also made dataset specified for each models (classification and semantic searc
 * For classification mode i just scrape places that the original dataset lack off, so that the model can learn better (avoiding class imbalance) - This dataset contains 1671 rows (scraped with octoparse from google maps), this is not specified just in Pekanbaru since in Pekanbaru some KBLI type business is not common
 * For semantic search the dataset contains examples of user queries (column query) and the correlated labels or placeTypes (column label)
 
-##🧠 MACHINE LEARNING AND MODELS
+## 🧠 MACHINE LEARNING AND MODELS
 My part of internship was to make models and apply machine learning and doing some data analysis. Mostly my machine learning works here involved geospatial data.
 
-###📊 KBLI CLASSIFICATION MODEL
+### 📊 KBLI CLASSIFICATION MODEL
 The .ipynb of this model can be downloaded from this repository. I basically use simple Neural Network and Convolutional Neural Network (Conv1D). Both models workes nicely for classifying the KBLI category from Pekanbaru's business places.
 
-###📍 DISTRICT BASED GEOSPATIAL CLUSTERING
+### 📍 DISTRICT BASED GEOSPATIAL CLUSTERING
 The .ipynb can also be downloaded. This clustering means to make clusters based on the latitude and longitude of the buildings and latitude and longitude from Pekanbaru's region (15 region). I used K-Means with K=15 (regions). You can overlay the clustering results with Pekanbaru's map and it looks quite similar.
 
-###🔎 GEOSPATIAL BASED SEMANTIC SEARCH ENGINE
+### 🔎 GEOSPATIAL BASED SEMANTIC SEARCH ENGINE
 Contains two models, one for generic semantic search engine (semantic similarity model) and one is a classifier model (classifying the entity extracted from the semantic model to a label). Both models then proceeds onto the SE functions to create the search engine that counts the semantic similarity and also the distance of the places from user's location and return the most similar and the closest place.

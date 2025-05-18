@@ -1,4 +1,4 @@
-#📌 **BIZMAP** 📌
+# 📌 **BIZMAP** 📌
 Internship project for MBKM at Badan Pusat Statistik Provinsi Riau. This repo contains the applications of Machine Learning and Data Analysis for business mapping in Pekanbaru. This includes data analytics and ML development for classification, clustering, and NLP (Semantic search)
 
 ## 🛠 TOOLS

@@ -44,7 +44,7 @@ This is the core innovation of the project, integrating natural language intelli
 * **Semantic Query Understanding:** This model is specifically trained to comprehend the semantic intent of user queries in Indonesian, classifying extracted entities into relevant place type labels. Strategies such as gradual unfreezing of transformer layers and class weights in the loss function were applied to improve accuracy, although overfitting remains an area for further improvement.
 * **Advanced Search Logic:** The search function integrates semantic place type prediction with keyword matching and geographical distance calculation using the Haversine formula. Search results are prioritized not merely by name matching, but also by semantic relevance and proximity to the user's location, resulting in a smarter and more contextual search experience. Analysis indicates that this approach significantly enhances result relevance compared to searches without the model, especially for ambiguous queries, despite an ongoing tendency towards pure lexical matching that is currently being addressed.
 
-## **RESULTS :**
+## **RESULTS**
 | **COMPONENTS**                          | **FUNCTIONS**                                                            | **RESULT**                                                                  |
 |----------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | KBLI Classification Model with CNN     | Automatically predict the KBLI category of a business place             | F1 Score:   0.877                                |
